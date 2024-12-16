@@ -1,0 +1,17 @@
+name: hello_world
+on:
+  push:
+    branches:
+      -main
+  pull_request:
+    branches: 
+      -main
+  workflow_dispatch:
+
+jobs:
+  # boo_hello :
+  runs-on: ubuntu-latest
+  steps: 
+    -uses: actions/chechout@v2
+  
+  
